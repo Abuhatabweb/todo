@@ -5,6 +5,7 @@ let taskDiv = document.querySelector(".task-div")
 taskArray = []
 // return from local storage
 localstorageReturn = function() {
+    if(taskArray != ""){
     tasks =window.localStorage.getItem("tasks")
     taskArray = JSON.parse(tasks)
     taskArray.forEach(task => {
@@ -18,7 +19,7 @@ localstorageReturn = function() {
         div.appendChild(del)
         taskDiv.appendChild(div)
     });
-}
+} }
 localstorageReturn()
 
 btn.onclick = function () {
