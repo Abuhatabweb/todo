@@ -62,12 +62,12 @@ button{
 }
 
 .del{
-    width: 7%;
+    width: 10%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 7px;
     cursor: pointer;
     border-radius: 5px;
     background-color: rgb(241, 60, 60);
@@ -75,6 +75,14 @@ button{
 
 .task.active{
     opacity: 30%;
+}
+.task.active p{
+    text-decoration: line-through;
+}
+
+p{
+    width: 75%;
+    overflow-wrap: anywhere;
 }
 
 @media (max-width: 767px) {
