@@ -31,7 +31,7 @@ function addElementToPage(taskArray) {
         let div = document.createElement("div")
         div.className = "task"
         div.setAttribute("id" , task.id)
-        div.innerHTML= task.text
+        div.innerHTML= `<p class ="p-text">${task.text}</p>`
         let del = document.createElement("span")
         del.className = "del"
         del.innerHTML = "Delete"
@@ -70,6 +70,10 @@ taskDiv.addEventListener("click" , (e) => {
     if(e.target.classList.contains("task")){
        e.target.classList.toggle("active")
        completeUpdate(e.target.getAttribute("id"))
+    }
+    if(e.target.classList.contains("p-text")){
+       e.target.parentElement.classList.toggle("active")
+       completeUpdate(e.target.parentElement.getAttribute("id"))
     }
 })
 
