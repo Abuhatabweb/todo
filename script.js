@@ -4,6 +4,12 @@ let taskDiv = document.querySelector(".task-div")
 
 let taskArray = []
 
+input.addEventListener("keydown" , (e)=>{
+    if (e.key == "Enter") {
+        btn.click()
+    }
+})
+
 getFromStorage()
 
 // Add task
