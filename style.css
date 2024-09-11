@@ -4,94 +4,119 @@
     margin: 0;
 }
 
+body{
+    background-color: #FABC3F;
+    font-family: cairo;
+}
+
+h1{
+    text-align: center;
+    margin: 30px 0px 5px;
+    color: white;
+    font-size: 50px;
+}
+
 .text-container{
-    width: 80%;
+    width: 60%;
     height: 80px;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     margin-top: 20px;
     display: flex;
     border-radius: 10px;
     align-items: center;
     justify-content: space-between;
-    background-color: #cfccd1;
+    background-color: #E85C0D;
 }
 
 input{
 border: none;
 border-radius: 5px;
 height: 100%;
-width: 90%;
+width: 85%;
+margin-right: 10px;
 padding: 10px;
 font-size: large;
 }
 
 button{
-    width: 8%;
+    width: 15%;
+    padding: 10px;
     height: 100%;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    background-color: #697bf8d1;
+    background-color: #821131;
+    color: white;
 }
 
 
 
 .task-div{
-    width: 80%;
+    width: 60%;
     margin: auto;
+    margin-bottom: 50px;
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
-    background-color: #cfccd1;
+    background-color: #E85C0D;
 }
 
 .task{
     width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 10px;
     font-weight: bold;
     display: flex;
-    flex-wrap: wrap;
     border-radius: 10px;
     align-items: center;
     justify-content: space-between;
-    background-color: #e8e6eb;
+    background-color: #FEECB3;
 }
 
 .del{
-    width: 10%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px;
+    padding: 5px 10px;
+    margin-left: 10px;
     cursor: pointer;
     border-radius: 5px;
     background-color: rgb(241, 60, 60);
 }
 
-.task.active{
-    opacity: 30%;
+input[type = "checkbox"]{
+    transform: scale(1.5);
 }
-.task.active p{
-    text-decoration: line-through;
+
+.div2{
+    display: flex;
+    align-items: center;
 }
 
 p{
     width: 75%;
+    cursor: default;
     overflow-wrap: anywhere;
 }
 
 @media (max-width: 767px) {
-    .del{
-        width: 20%;
-        font-size: small;
+    .task-div{
+        width: 80%;
+    }
+    .text-container{
+        width: 80%;
+    }
+    h1{
+        font-size: 40px;
     }
     button{
-        width: 30%;
-        margin-left: 10px;
+        width: 20%;
+    }
+    .p-text{
+        width: 60%;
     }
 }
